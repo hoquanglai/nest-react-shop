@@ -1,5 +1,7 @@
+// blog-backend/src/common/authentication.middleware.ts
+    
 import { Injectable, NestMiddleware } from '@nestjs/common';
-import * as jwt from 'express-jwt';
+var { expressjwt: jwt } = require("express-jwt");
 import { expressJwtSecret } from 'jwks-rsa';
 import { Request, Response } from 'express';
 import * as dotenv from 'dotenv';

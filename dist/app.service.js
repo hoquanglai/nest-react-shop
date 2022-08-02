@@ -10,7 +10,7 @@ exports.AppService = void 0;
 const common_1 = require("@nestjs/common");
 let AppService = class AppService {
     getHello() {
-        return 'Hello World!';
+        return `https://${process.env.AUTH0_DOMAIN}/.well-known/jwks.json`;
     }
 };
 AppService = __decorate([

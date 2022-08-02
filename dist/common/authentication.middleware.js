@@ -8,7 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AuthenticationMiddleware = void 0;
 const common_1 = require("@nestjs/common");
-const jwt = require("express-jwt");
+var { expressjwt: jwt } = require("express-jwt");
 const jwks_rsa_1 = require("jwks-rsa");
 const dotenv = require("dotenv");
 dotenv.config();
